@@ -1,0 +1,230 @@
+// HEADER
+
+.header {
+  align-items: center;
+  border-bottom: solid $c-header-border 1px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 30px;
+  padding-right: 70px;
+  width: 91%;
+
+  @media (max-width: $screen-tablet-max-width) {
+    box-shadow: 0 10px 20px 0 $c-header-shadow;
+    padding-right: 35px;
+    width: 100%;
+  }
+
+  @media (min-width: $screen-phone-min-width) and (max-width: $screen-tablet-max-width) {
+    height: 50px;
+    padding-left: 20px;
+    padding-right: 35px;
+  }
+
+  @media (max-width: $screen-small-phone-max-width) {
+    height: 65px;
+    padding-left: 30px;
+    padding-right: 40px;
+  }
+}
+
+.header-icon {
+  fill: $c-header-icon;
+  font-size: 18px;
+
+  @media (min-width: $screen-phone-min-width) and (max-width: $screen-tablet-max-width) {
+    font-size: 12px;
+  }
+}
+
+.menu-icon {
+  margin-right: 15px;
+}
+
+.menu-word {
+  @media (max-width: $screen-tablet-max-width) {
+    display: none;
+  }
+}
+
+.header-text {
+  color: $c-header-text;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+  text-align: center;
+
+  @media (min-width: $screen-phone-min-width) and (max-width: $screen-tablet-max-width) {
+    font-size: 7px;
+    margin-bottom: 8px;
+  }
+
+  @media (max-width: $screen-small-phone-max-width) {
+    display: none;
+  }
+}
+
+.nav-bar {
+  position: relative;
+  top: 3px;
+  width: 65%;
+  z-index: 1;
+
+  @media (max-width: $screen-tablet-max-width) {
+    background-color: $c-fixed-nav-bg;
+    box-shadow: 0 -10px 20px 0 $c-header-shadow;
+    left: 0;
+    position: fixed;
+    top: 100%;
+    transform: translateY(-100%);
+    width: 100%;
+  }
+}
+
+.nav-list {
+  display: flex;
+  margin: 0 auto;
+  padding-left: 0;
+
+  @media (min-width: $screen-phone-min-width) and (max-width: $screen-tablet-max-width) {
+    width: 60%;
+  }
+
+  @media (max-width: $screen-small-phone-max-width) {
+    width: 100%;
+  }
+}
+
+.nav-item {
+  display: inline-block;
+  flex: 1 1 0;
+  list-style: none;
+
+  &:hover {
+    background: linear-gradient($c-header-nav-item-hover-bg);
+
+    @media (max-width: $screen-phone-max-width) {
+      background: none;
+    }
+  }
+}
+
+.highlighted-item {
+  border-bottom: $c-highlighted 3px solid;
+
+  @media (min-width: $screen-phone-min-width) and (max-width: $screen-tablet-max-width) {
+    border-bottom: none;
+    border-top: $c-highlighted 2px solid;
+  }
+
+  @media (max-width: $screen-small-phone-max-width) {
+    border: none;
+  }
+}
+
+.nav-item-image {
+  display: block;
+  fill: $c-header-icon;
+  font-size: 35px;
+  margin: 15px auto;
+
+  @media (min-width: $screen-phone-min-width) and (max-width: $screen-tablet-max-width) {
+    font-size: 20px;
+    margin: 6px auto;
+  }
+
+  @media (max-width: $screen-small-phone-max-width) {
+    margin: 30px auto;
+  }
+}
+
+.highlighted-image {
+  fill: $c-header-icon-highlighted;
+}
+
+.nav-link {
+  text-decoration: none;
+}
+
+.highlighted-link {
+  color: $c-header-text-highlighted;
+}
+
+.header-right-icon {
+  cursor: pointer;
+  display: inline-block;
+}
+
+.have-notification {
+  position: relative;
+
+  &::after {
+    background: $c-highlighted;
+    border-radius: 5px;
+    content: "";
+    display: block;
+    height: 5px;
+    left: 50%;
+    position: relative;
+    top: 9px;
+    transform: translateX(-50%);
+    width: 5px;
+
+    @media (min-width: $screen-phone-min-width) and (max-width: $screen-tablet-max-width) {
+      height: 3px;
+      top: 6px;
+      width: 3px;
+    }
+  }
+}
+
+.search {
+  position: relative;
+
+  @media (max-width: $screen-tablet-max-width) {
+    margin-right: 0;
+  }
+}
+
+.search-input {
+  border-radius: 30px;
+  color: $c-search-input-text;
+  height: 50px;
+  opacity: 0;
+  padding: 0 80px 0 20px;
+  position: absolute;
+  right: -10px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: all $time-search-transition;
+  width: 50px;
+  z-index: 0;
+
+  @media (max-width: $screen-tablet-max-width) {
+    height: 35px;
+  }
+
+  &:focus {
+    cursor: text;
+    opacity: 1;
+    width: 150px;
+  }
+}
+
+.loupe {
+  padding-left: 40px;
+  position: relative;
+  z-index: 1;
+
+  @media (min-width: $screen-phone-min-width) and (max-width: $screen-tablet-max-width) {
+    padding-left: 17px;
+  }
+
+  @media (max-width: $screen-small-phone-max-width) {
+    padding-left: 13px;
+  }
+}

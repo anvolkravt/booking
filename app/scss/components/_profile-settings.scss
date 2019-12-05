@@ -1,0 +1,346 @@
+.profile-settings-container {
+  background-color: $c-profile-settings-page-bg;
+}
+
+// Typography
+
+.person-name,
+.profile-card-point-text,
+.setting {
+  color: $c-profile-settings-prime-text;
+  font-weight: bold;
+}
+
+.occupation,
+.settings-description,
+.settings-value,
+.select {
+  color: $c-profile-settings-sub-text;
+  letter-spacing: 2px;
+  word-wrap: break-word;
+  font-family: "Montserrat-Bold", sans-serif;
+}
+
+// Main
+
+.profile-settings-main {
+  display: flex;
+  padding-left: 120px;
+  padding-right: 90px;
+  padding-top: 45px;
+
+  @media (min-width: $screen-phone-min-width) and (max-width: $screen-phone-max-width) {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  @media (max-width: $screen-small-phone-max-width) {
+    display: block;
+    padding: 0;
+  }
+}
+
+// Profile Card
+
+.profile-card {
+  background-color: $c-profile-settings-profile-card-bg;
+  border-radius: 23px;
+  box-shadow: 0 10px 30px 0 $c-profile-settings-profile-card-shadow;
+  box-sizing: border-box;
+  height: fit-content;
+  padding: 65px 60px 20px;
+  width: 34%;
+
+  @media (min-width: $screen-phone-min-width) and (max-width: $screen-tablet-max-width) {
+    padding: 35px 20px 35px;
+    width: 36%;
+  }
+
+  @media (max-width: $screen-small-phone-max-width) {
+    background-color: $c-profile-settings-profile-card-phone-bg;
+    box-shadow: none;
+    width: 100%;
+  }
+}
+
+.profile-photo {
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  width: fit-content;
+}
+
+.avatar {
+  border-radius: 25px;
+  box-shadow: 0 15px 15px 0 $c-profile-settings-profile-photo-shadow;
+  display: block;
+  height: 80px;
+  margin-left: auto;
+  margin-right: auto;
+  object-fit: cover;
+  width: 80px;
+
+  @media (min-width: $screen-phone-min-width) and (max-width: $screen-tablet-max-width) {
+    height: 50px;
+    width: 50px;
+    border-radius: 15px;
+  }
+}
+
+.checked {
+  background: linear-gradient($c-profile-settings-profile-photo-checked-bg);
+  border-radius: 15px;
+  height: 25px;
+  position: absolute;
+  right: 5px;
+  top: 45px;
+  transform: translateX(50%);
+  width: 25px;
+
+  @media (min-width: $screen-phone-min-width) and (max-width: $screen-tablet-max-width) {
+    height: 18px;
+    width: 18px;
+    top: 25px;
+    right: 0;
+  }
+}
+
+.check-mark {
+  font-size: 15px;
+  fill: $c-profile-settings-profile-photo-check-mark;
+  left: 50%;
+  position: relative;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  @media (min-width: $screen-phone-min-width) and (max-width: $screen-tablet-max-width) {
+    font-size: 10px;
+  }
+}
+
+.person-name {
+  margin-bottom: 0;
+  margin-top: 15px;
+  text-align: center;
+  font-size: 20px;
+
+  @media (min-width: $screen-phone-min-width) and (max-width: $screen-tablet-max-width) {
+    font-size: 15px;
+    margin-top: 10px;
+  }
+}
+
+.occupation {
+  margin-top: 8px;
+  text-align: center;
+  font-size: 9px;
+  margin-bottom: 12px;
+
+  @media (min-width: $screen-phone-min-width) and (max-width: $screen-tablet-max-width) {
+    font-size: 6px;
+    margin-top: 4px;
+    margin-bottom: 10px;
+  }
+}
+
+.edit-profile-button {
+  border-radius: 25px;
+  display: block;
+  margin-bottom: 70px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px 25px;
+  font-size: 11px;
+
+  @media (min-width: $screen-phone-min-width) and (max-width: $screen-tablet-max-width) {
+    font-size: 7px;
+    padding: 6px 15px;
+    margin-bottom: 40px;
+  }
+}
+
+.profile-card-icon {
+  font-size: 20px;
+  fill: $c-profile-settings-profile-card-icon;
+  margin-right: 25px;
+
+  @media (min-width: $screen-phone-min-width) and (max-width: $screen-tablet-max-width) {
+    font-size: 13px;
+    margin-right: 13px;
+  }
+}
+
+.profile-card-point-text {
+  font-size: 13px;
+
+  @media (min-width: $screen-phone-min-width) and (max-width: $screen-tablet-max-width) {
+    font-size: 9px;
+  }
+}
+
+.profile-point {
+  margin-bottom: 25px;
+  display: flex;
+  align-items: center;
+
+  @media (min-width: $screen-phone-min-width) and (max-width: $screen-tablet-max-width) {
+    margin-bottom: 18px;
+  }
+}
+
+.traveling-block {
+  border-bottom: 1px solid $c-profile-settings-profile-card-border;
+  padding-bottom: 7px;
+}
+
+.settings-block {
+  padding-top: 40px;
+
+  @media (min-width: $screen-phone-min-width) and (max-width: $screen-tablet-max-width) {
+    padding-top: 23px;
+  }
+}
+
+.traveling-block,
+.settings-block {
+  @media (max-width: $screen-small-phone-max-width) {
+    display: none;
+  }
+}
+
+// Settings
+
+.settings {
+  box-sizing: border-box;
+  padding: 20px 0 100px 95px;
+  width: 65%;
+
+  @media (min-width: $screen-phone-min-width) and (max-width: $screen-tablet-max-width) {
+    padding-left: 40px;
+    padding-top: 0;
+  }
+
+  @media (max-width: $screen-small-phone-max-width) {
+    padding-right: 30px;
+    width: 100%;
+  }
+}
+
+.settings-header {
+  align-items: center;
+  border-bottom: 1px solid $c-profile-settings-section-header-border;
+  display: flex;
+  justify-content: space-between;
+}
+
+.settings-type {
+  margin-bottom: 8px;
+  font-size: 20px;
+
+  @media (min-width: $screen-phone-min-width) and (max-width: $screen-tablet-max-width) {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+}
+
+.settings-description {
+  margin-top: 0;
+  font-size: 10px;
+  margin-bottom: 18px;
+
+  @media (min-width: $screen-phone-min-width) and (max-width: $screen-tablet-max-width) {
+    font-size: 6px;
+    margin-bottom: 8px;
+  }
+}
+
+.settings-header-button {
+  background-color: $c-profile-settings-options-button;
+  border-radius: 20px;
+  height: 40px;
+  margin-left: 5px;
+  position: relative;
+  width: 40px;
+
+  @media (min-width: $screen-phone-min-width) and (max-width: $screen-tablet-max-width) {
+    height: 25px;
+    width: 25px;
+  }
+
+  //@media (max-width: $screen-small-phone-max-width) {
+  //  height: 30px;
+  //  width: 30px;
+  //}
+}
+
+.settings-header-icon {
+  font-size: 20px;
+  fill: $c-profile-settings-bar-icon;
+  position: absolute;
+  transform: translate(-50%, -50%);
+
+  @media (min-width: $screen-phone-min-width) and (max-width: $screen-tablet-max-width) {
+    font-size: 14px;
+  }
+
+  @media (max-width: $screen-small-phone-max-width) {
+    height: 15px;
+  }
+}
+
+.settings-options {
+  padding-right: 60px;
+  padding-top: 35px;
+
+  @media (min-width: $screen-phone-min-width) and (max-width: $screen-tablet-max-width) {
+    padding-right: 10px;
+    padding-top: 15px;
+  }
+}
+
+.settings-item {
+  margin-bottom: 32px;
+
+  @media (min-width: $screen-phone-min-width) and (max-width: $screen-tablet-max-width) {
+    margin-bottom: 20px;
+  }
+}
+
+.setting {
+  display: block;
+  margin-bottom: 0;
+  margin-top: 0;
+  font-size: 14px;
+
+  @media (min-width: $screen-phone-min-width) and (max-width: $screen-tablet-max-width) {
+    font-size: 9px;
+  }
+}
+
+.select {
+  -webkit-appearance: none;
+  background-color: $c-profile-settings-page-bg;
+  outline: none;
+}
+
+.settings-value,
+.select {
+  font-size: 10px;
+  font-weight: bold;
+  margin-bottom: 0;
+  margin-top: 5px;
+
+  @media (min-width: $screen-phone-min-width) and (max-width: $screen-tablet-max-width) {
+    font-size: 6px;
+    margin-top: 3px;
+  }
+}
+
+.settings-search,
+.settings-mode,
+.settings-notifications,
+.settings-messages {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}

@@ -1,0 +1,134 @@
+.onboarding-container {
+  background-image:
+    linear-gradient($c-bg-gradient),
+    url("../../assets/images/backgrounds/Onboarding.png");
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.onboarding-header {
+  padding-bottom: 120px;
+  padding-top: 135px;
+
+  @media (max-width: $screen-small-phone-max-width) {
+    padding-top: 150px;
+  }
+}
+
+.onboarding-header-logo {
+  background-color: $c-onboarding-logo-bg;
+  border-radius: 27px;
+  box-shadow: 0 10px 10px 5px $c-onboarding-shadow, inset 0 -5px 10px 5px $c-onboarding-shadow;
+  height: 82px;
+  margin-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  width: 82px;
+}
+
+.onboarding-logo-image {
+  fill: $c-onboarding-logo-image;
+  font-size: 35px;
+  left: 50%;
+  position: absolute;
+  stroke: $c-onboarding-logo-image;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.onboarding-app-name {
+  color: $c-onboarding-app-name;
+  cursor: default;
+  font-size: 27px;
+  letter-spacing: 10px;
+  margin-bottom: 40px;
+  text-align: center;
+
+  @media (max-width: $screen-small-phone-max-width) {
+    font-size: 24px;
+  }
+}
+
+.onboarding-header-decoration {
+  background-color: $c-onboarding-header-decoration;
+  height: 7px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 36px;
+}
+
+.onboarding-authorization {
+  font-weight: bold;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 100px;
+  width: 25%;
+
+  @media (min-width: $screen-tablet-min-width) and (max-width: $screen-tablet-max-width) {
+    width: 50%;
+  }
+
+  @media (min-width: $screen-phone-min-width) and (max-width: $screen-phone-max-width) {
+    width: 65%;
+  }
+
+  @media (max-width: $screen-small-phone-max-width) {
+    width: 80%;
+  }
+}
+
+.onboarding-link {
+  border-radius: 30px;
+  cursor: pointer;
+  display: block;
+  font-size: 13px;
+  letter-spacing: 1px;
+  padding: 16px;
+  text-decoration: none;
+}
+
+.login-link {
+  background-color: $c-onboarding-login-button-bg;
+  box-shadow: 0 10px 10px 5px $c-onboarding-shadow, inset 0 -5px 10px 5px $c-onboarding-shadow;
+  color: $c-onboarding-login-button-text;
+}
+
+.create-account-link {
+  background: $c-onboarding-create-acc-button-bg;
+  border: 2px solid $c-onboarding-create-acc-button-border;
+  color: $c-onboarding-create-acc-button-text;
+}
+
+.between-buttons {
+  color: $c-onboarding-between-buttons-text;
+  cursor: default;
+  font-size: 10px;
+  letter-spacing: 3px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 24px;
+  position: relative;
+  text-align: center;
+
+  &::before,
+  &::after {
+    background-color: $c-onboarding-between-buttons-decoration;
+    content: "";
+    display: block;
+    height: 2px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 38%;
+  }
+
+  &::before {
+    left: 5%;
+  }
+
+  &::after {
+    right: 5%;
+  }
+}

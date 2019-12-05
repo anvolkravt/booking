@@ -1,0 +1,51 @@
+{
+  "extends": "stylelint-config-standard",
+  "plugins": [
+    "stylelint-declaration-use-variable",
+    "stylelint-scss",
+    "stylelint-order"
+  ],
+  "rules": {
+    "no-empty-first-line": true,
+    "declaration-no-important": true,
+    "selector-max-universal": 0,
+    "selector-max-id": 0,
+    "selector-no-qualifying-type": true,
+    "selector-max-class": 3,
+    "selector-max-attribute": 3,
+    "selector-max-combinators": 2,
+    "selector-max-type": 2,
+    "number-leading-zero": "never",
+    "shorthand-property-no-redundant-values": true,
+    "declaration-block-no-redundant-longhand-properties": true,
+    "color-named": "never",
+    "unit-whitelist": ["px", "%", "vh", "ms", "s"],
+    "order/properties-alphabetical-order": true,
+    "at-rule-no-unknown": [true, {
+      "ignoreAtRules": ["function", "mixin", "return"]
+    }],
+    "scss/no-duplicate-dollar-variables": true,
+    "scss/double-slash-comment-whitespace-inside": "always",
+    "scss/selector-nest-combinators": "always",
+    "scss/selector-no-redundant-nesting-selector": true,
+    "scss/operator-no-newline-before": true,
+    "scss/operator-no-unspaced": true,
+    "scss/dollar-variable-colon-space-after": "always",
+    "scss/dollar-variable-colon-space-before": "never",
+    "sh-waqar/declaration-use-variable": ["background-color", "color", "fill", "stroke", "font-family", "z-index"],
+    "scss/dollar-variable-pattern": "^font-|^c-|^z-|^screen-|^time-|$-width",
+    "scss/media-feature-value-dollar-variable": "always",
+    "order/order": [
+      {
+        "type": "at-rule",
+        "name": "include"
+      },
+      "declarations",
+      {
+        "type": "at-rule",
+        "name": "media"
+      },
+      "rules"
+    ]
+  }
+}

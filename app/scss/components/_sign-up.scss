@@ -1,0 +1,176 @@
+.sign-up-container {
+  background-image:
+    linear-gradient($c-bg-gradient),
+    url("./assets/images/backgrounds/Sign_Up.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.page-title {
+  color: $c-sign-up-page-title;
+  font-size: 14px;
+  font-weight: normal;
+  letter-spacing: 2px;
+  margin: 0;
+  padding: 57px;
+  text-align: center;
+
+  @media (min-width: $screen-phone-min-width) and (max-width: $screen-tablet-max-width) {
+    font-size: 10px;
+    padding: 45px;
+  }
+
+  @media (max-width: $screen-small-phone-max-width) {
+    font-size: 12px;
+    padding: 75px;
+  }
+}
+
+.sign-up-main {
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 100px;
+  width: 31%;
+
+  @media (min-width: $screen-phone-min-width) and (max-width: $screen-tablet-max-width) {
+    width: 41%;
+  }
+
+  @media (max-width: $screen-small-phone-max-width) {
+    width: 100%;
+  }
+}
+
+.sign-up-form {
+  background-color: $c-sign-up-form-bg;
+  border-radius: 12px;
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 47px 42px 37px;
+
+  @media (min-width: $screen-phone-min-width) and (max-width: $screen-tablet-max-width) {
+    padding: 40px 32px 20px;
+  }
+
+  @media (max-width: $screen-small-phone-max-width) {
+    border-radius: 0;
+    padding-bottom: 35px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+.sign-up-form-title {
+  color: $c-sign-up-form-title;
+  font-size: 28px;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+  margin-top: 0;
+  text-align: center;
+
+  @media (max-width: $screen-tablet-max-width) {
+    font-size: 21px;
+  }
+}
+
+.form-fiels-container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 94%;
+}
+
+.sign-up-form-input,
+.sign-up-form-label {
+  display: block;
+  font-size: 13px;
+  width: 100%;
+
+  @media (min-width: $screen-phone-min-width) and (max-width: $screen-tablet-max-width) {
+    font-size: 10px;
+  }
+
+  @media (max-width: $screen-small-phone-max-width) {
+    font-size: 14px;
+  }
+}
+
+.sign-up-form-label {
+  color: $c-sign-up-form-label;
+  letter-spacing: 1px;
+  margin-bottom: 12px;
+  padding-left: 10px;
+
+  @media (min-width: $screen-phone-min-width) and (max-width: $screen-tablet-max-width) {
+    margin-bottom: 10px;
+  }
+
+  @media (max-width: $screen-small-phone-max-width) {
+    margin-bottom: 9px;
+  }
+}
+
+.sign-up-form-input {
+  background-color: $c-sign-up-form-input-bg;
+  border-bottom: 2px solid $c-sign-up-form-input-border;
+  margin-bottom: 15px;
+
+  @media (min-width: $screen-phone-min-width) and (max-width: $screen-tablet-max-width) {
+    margin-bottom: 10px;
+  }
+
+  &:focus {
+    border-bottom: 2px solid $c-sign-up-form-input-focus;
+  }
+}
+
+.sign-up-button {
+  border-radius: 30px;
+  cursor: pointer;
+  display: block;
+  font-size: 14px;
+  margin: 45px auto 10px;
+  padding: 15px;
+  width: 100%;
+
+  @media (min-width: $screen-phone-min-width) and (max-width: $screen-tablet-max-width) {
+    font-size: 10px;
+    margin-top: 25px;
+    padding: 13px;
+  }
+
+  @media (max-width: $screen-small-phone-max-width) {
+    margin-top: 35px;
+  }
+}
+
+.sign-up-is-member {
+  border-top: solid 2px $c-sign-up-decoration-bg;
+  color: $c-sign-up-is-member;
+  font-size: 13px;
+  letter-spacing: 1px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 87px;
+  padding-top: 18px;
+  text-align: center;
+  width: 95%;
+
+  @media (min-width: $screen-phone-min-width) and (max-width: $screen-tablet-max-width) {
+    font-size: 10px;
+    margin-top: 80px;
+    padding-top: 15px;
+  }
+
+  @media (max-width: $screen-small-phone-max-width) {
+    margin-top: 97px;
+    width: 85%;
+  }
+}
+
+.sign-up-login-link {
+  border-bottom: 2px $c-sign-up-login-link-underline solid;
+  color: $c-sign-up-login-link;
+  text-decoration: none;
+}

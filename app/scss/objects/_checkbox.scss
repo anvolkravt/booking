@@ -1,0 +1,118 @@
+.checkbox-checked {
+  background-color: $c-checkbox-bg;
+  border-radius: 5px;
+  height: 25px;
+  left: 0;
+  position: absolute;
+  transition: $time-checkbox-transition;
+  width: 25px;
+
+  @media (min-width: $screen-phone-min-width) and (max-width: $screen-tablet-max-width) {
+    height: 14px;
+    width: 14px;
+    border-radius: 3px;
+  }
+
+  &::after {
+    content: "";
+    display: none;
+    position: absolute;
+  }
+}
+
+.checkbox-wrapper {
+  cursor: pointer;
+  padding-right: 10px;
+  position: relative;
+
+  @media (min-width: $screen-phone-min-width) and (max-width: $screen-tablet-max-width) {
+    padding-right: 0;
+  }
+
+  .checkbox-checked {
+    &::after {
+      content: url("../../assets/images/icons/tick.svg");
+      height: 18px;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      width: 18px;
+    }
+  }
+}
+
+.checkbox {
+  height: 0;
+
+  &:checked {
+    ~ .checkbox-checked {
+      background-color: $c-checkbox-bg-checked;
+
+      &::after {
+        display: block;
+      }
+    }
+  }
+}
+
+// Switch
+
+.switch-checkbox-wrapper {
+  height: 13px;
+  position: relative;
+  width: 40px;
+
+  @media (min-width: $screen-phone-min-width) and (max-width: $screen-tablet-max-width) {
+    height: 8px;
+    width: 20px;
+  }
+}
+
+.switch-slider {
+  background-color: $c-checkbox-bg;
+  border-radius: 34px;
+  bottom: 0;
+  cursor: pointer;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: $time-checkbox-transition;
+
+  &::before {
+    background-color: $c-switch-checkbox-circle;
+    border-radius: 50%;
+    bottom: -3px;
+    box-shadow: 0 5px 5px 0 $c-switch-checkbox-shadow;
+    content: "";
+    height: 21px;
+    left: 0;
+    position: absolute;
+    transition: $time-checkbox-transition;
+    width: 21px;
+
+    @media (min-width: $screen-phone-min-width) and (max-width: $screen-tablet-max-width) {
+      height: 12px;
+      width: 12px;
+      bottom: -2px;
+    }
+  }
+}
+
+.switch {
+  height: 0;
+
+  &:checked {
+    + .switch-slider {
+      background-color: $c-checkbox-bg-checked;
+
+      &::before {
+        transform: translateX(20px);
+
+        @media (min-width: $screen-phone-min-width) and (max-width: $screen-tablet-max-width) {
+          transform: translateX(10px);
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,3 @@
+@function pxToPercent($parentWidth, $blockWidth) {
+  @return $parentWidth / $blockWidth * 100;
+}

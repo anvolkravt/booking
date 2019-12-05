@@ -1,0 +1,11 @@
+$screen-desktop-width: 1024px;
+$screen-tablet-width: 768px;
+$screen-phone-width: 568px;
+
+$screen-tablet-min-width: $screen-tablet-width;
+$screen-tablet-max-width: ($screen-desktop-width - 1);
+
+$screen-phone-min-width: $screen-phone-width;
+$screen-phone-max-width: ($screen-tablet-min-width - 1);
+
+$screen-small-phone-max-width: ($screen-phone-width - 1);

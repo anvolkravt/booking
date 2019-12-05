@@ -1,0 +1,36 @@
+{
+  "extends": "airbnb-base",
+  "rules": {
+    "max-len": ["error", {
+      "code": 120
+    }],
+    "max-lines": ["error", {
+      "max": 120,
+      "skipBlankLines": true,
+      "skipComments": true
+    }],
+    "max-lines-per-function": ["error", {
+      "max": 20,
+      "IIFEs": true,
+      "skipBlankLines": true,
+      "skipComments": true
+    }],
+    "no-multiple-empty-lines": ["error", {
+      "max": 1,
+      "maxEOF": 0,
+      "maxBOF": 0
+    }],
+    "padding-line-between-statements": ["error", {
+      "blankLine": "always",
+      "prev": "*",
+      "next": "return"
+    }],
+    "curly": "error",
+    "max-params": "error",
+    "max-depth": ["error", 2],
+    "no-implicit-coercion": ["error", {
+      "allow":  ["!!"]
+    }],
+    "no-negated-condition": "error"
+  }
+}

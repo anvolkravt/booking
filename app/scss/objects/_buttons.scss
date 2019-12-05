@@ -1,0 +1,16 @@
+.button {
+  border: none;
+  text-align: center;
+  transition: $time-button-transition;
+
+  &:hover {
+    transform: scale(1.05, 1.05);
+  }
+}
+
+.button-primary {
+  background: linear-gradient($c-primary-button-bg-gradient);
+  box-shadow: 0 15px 15px 0 $c-primary-button-shadow;
+  color: $c-primary-button-text;
+  letter-spacing: 1px;
+}

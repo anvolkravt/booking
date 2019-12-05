@@ -1,0 +1,11 @@
+@mixin pseudo_elements {
+  content: "";
+  display: inline;
+  position: static;
+}
+
+@mixin fullsize_bg {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

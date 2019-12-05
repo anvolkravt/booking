@@ -1,0 +1,108 @@
+// Common
+
+$c-bg-gradient: to bottom left, $c-peachy-low-trans, $c-magenta-low-trans;
+$c-primary-button-shadow: $c-dark-gray-high-trans;
+$c-primary-button-text: $c-white;
+$c-primary-button-bg-gradient: to bottom, $c-peachy, $c-magenta;
+
+// Onboarding
+
+$c-onboarding-logo-bg: $c-very-light-gray;
+$c-onboarding-logo-image: $c-magenta;
+$c-onboarding-shadow: $c-dark-gray-high-trans;
+$c-onboarding-app-name: $c-white;
+$c-onboarding-header-decoration: $c-white;
+$c-onboarding-login-button-bg: $c-very-light-gray;
+$c-onboarding-login-button-text: $c-magenta;
+$c-onboarding-create-acc-button-bg: transparent;
+$c-onboarding-create-acc-button-text: $c-white;
+$c-onboarding-between-buttons-text: $c-white;
+$c-onboarding-between-buttons-decoration: $c-light-gray-high-trans;
+$c-onboarding-create-acc-button-border: $c-light-gray-middle-trans;
+
+// Sign_up
+
+$c-sign-up-page-title: $c-white;
+$c-sign-up-form-title: $c-dark-gray;
+$c-sign-up-form-bg: $c-very-light-gray;
+$c-sign-up-form-label: $c-gray;
+$c-sign-up-form-input-bg: $c-very-light-gray;
+$c-sign-up-form-input-border: $c-bit-light-gray;
+$c-sign-up-form-input-focus: $c-magenta;
+$c-sign-up-shadow: $c-dark-gray-high-trans;
+$c-sign-up-is-member: $c-light-gray-middle-trans;
+$c-sign-up-login-link: $c-white;
+$c-sign-up-decoration-bg: $c-light-gray-high-trans;
+$c-sign-up-login-link-underline: $c-light-gray-middle-trans;
+
+// Header
+
+$c-header-border: $c-bit-light-gray;
+$c-header-shadow: $c-dark-gray-high-trans;
+$c-fixed-nav-bg: $c-extremely-light-gray;
+$c-highlighted: $c-magenta;
+$c-header-text: $c-gray;
+$c-header-text-highlighted: $c-magenta;
+$c-header-icon: $c-gray;
+$c-header-icon-highlighted: $c-magenta;
+$c-header-nav-item-hover-bg: to bottom, transparent, $c-magenta-high-trans;
+$c-search-input-text: $c-gray;
+
+// Details
+
+$c-details-page-bg: $c-very-light-gray;
+$c-details-pagination-dot-bg: $c-light-gray-high-trans;
+$c-details-pagination-dot-bg-focus: $c-white;
+$c-details-slider-bookmark-bg: $c-white;
+$c-details-icon-location-bar: $c-gray;
+$c-details-icon-location-bar-overlap: $c-white;
+$c-details-icon-bookmark: $c-magenta;
+$c-details-block-bg: $c-very-light-gray;
+$c-details-block-title: $c-very-dark-gray;
+$c-details-location-border: $c-gray;
+$c-details-location-header-text: $c-dark-gray;
+$c-details-location-text: $c-gray-2;
+$c-details-location-price-decor-bg: $c-gray;
+$c-details-location-amenities-item-bg: $c-bit-light-gray;
+$c-details-icon-amenities: $c-bit-dark-gray;
+$c-details-location-block-shadow: $c-dark-gray-high-trans;
+$c-details-address-decoration-core: $c-magenta;
+$c-details-address-decoration-border: $c-white;
+$c-details-address-decoration-shadow: $c-magenta-middle-trans;
+$c-details-address-decoration-shadow-2: $c-magenta-high-trans;
+$c-details-contidions-decoration: $c-gray;
+
+// Modal Window
+
+$c-modal-bg: $c-light-gray;
+$c-modal-page-overlay-bg: $c-dark-gray-middle-trans;
+$c-modal-header-text: $c-dark-gray;
+$c-modal-text: $c-gray;
+$c-modal-close-button-bg: transparent;
+$c-modal-close-button-cross: $c-gray;
+$c-modal-close-button-cross-hover: $c-magenta;
+
+// Profile Settings
+
+$c-profile-settings-page-bg: $c-light-gray;
+$c-profile-settings-profile-card-bg: $c-extremely-light-gray;
+$c-profile-settings-profile-card-phone-bg: $c-light-gray;
+$c-profile-settings-profile-card-shadow: $c-bit-light-gray;
+$c-profile-settings-profile-photo-checked-bg: to bottom, $c-peachy, $c-magenta;
+$c-profile-settings-profile-photo-check-mark: $c-white;
+$c-profile-settings-profile-photo-shadow: $c-bit-light-gray;
+$c-profile-settings-profile-card-icon: $c-bit-dark-gray;
+$c-profile-settings-bar-icon: $c-bit-dark-gray;
+$c-profile-settings-prime-text: $c-dark-gray;
+$c-profile-settings-sub-text: $c-bit-dark-gray;
+$c-profile-settings-profile-card-border: $c-gray;
+$c-profile-settings-options-button: $c-bit-light-gray;
+$c-profile-settings-section-header-border: $c-gray;
+
+// Checkbox
+
+$c-checkbox-checked-bg-gradient: to bottom, $c-peachy, $c-magenta;
+$c-checkbox-bg: $c-bit-light-gray;
+$c-checkbox-bg-checked: $c-magenta;
+$c-switch-checkbox-circle: $c-white;
+$c-switch-checkbox-shadow: $c-dark-gray-high-trans;
