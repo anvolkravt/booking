@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nice Project - Sign Up</title>
+    <link rel="stylesheet" type="text/css" href="main.css"/>
+</head>
+<body>
+<div class="sign-up-container container">
+    <div class="content">
+        <header>
+            <h2 class="page-title">Sign up</h2>
+        </header>
+        <main class="sign-up-main">
+            <form class="sign-up-form">
+                <h1 class="sign-up-form-title">Join us</h1>
+
+                <div class="form-fiels-container">
+                    <label for="username" class="sign-up-form-label">User Name</label>
+                    <input id="username" type="text" name="username" class="sign-up-form-input input">
+
+                    <label for="password" class="sign-up-form-label">Password *</label>
+                    <input id="password" type="password" name="password" required class="sign-up-form-input input">
+
+                    <label for="password-repeat" class="sign-up-form-label">Repeat Password *</label>
+                    <input id="password-repeat" type="password" name="password-repeat" maxlength="12" required
+                           class="sign-up-form-input input">
+
+                    <label for="email" class="sign-up-form-label">Email Address *</label>
+                    <input id="email" type="email" name="email" maxlength="12" required
+                           class="sign-up-form-input input">
+                </div>
+
+                <button type="submit" class="button button-primary sign-up-button">Sign up</button>
+            </form>
+            <p class="sign-up-is-member">Already a member?
+                <a href="#" class="sign-up-login-link">Sign in</a></p>
+        </main>
+    </div>
+</div>
+</body>
+</html>

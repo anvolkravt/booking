@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nice Project - My Settings</title>
+    <link rel="stylesheet" type="text/css" href="main.css" />
+</head>
+<body>
+<div class="container profile-settings-container">
+    <div class="content">
+        <header class="header">
+            <div>
+                <svg class="menu-icon header-icon icon icon-menu">
+                    <use xlink:href="assets/images/sprite/symbol/sprite.svg#menu"></use>
+                </svg>
+                <span class="header-text menu-word">Menu</span>
+            </div>
+            <nav class="nav-bar">
+                <ul class="nav-list">
+                    <li class="nav-item highlighted-item">
+                        <a class="nav-link" href="#">
+                            <!--                                     alt="plane">-->
+                            <svg class="nav-item-image highlighted-image icon icon-world">
+                                <use xlink:href="assets/images/sprite/symbol/sprite.svg#world"></use>
+                            </svg>
+                            <div class="header-text highlighted-link">Traveling</div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <svg class="nav-item-image icon icon-compass">
+                                <use xlink:href="assets/images/sprite/symbol/sprite.svg#compass"></use>
+                            </svg>
+                            <div class="header-text">Explore</div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <svg class="nav-item-image icon icon-electronics">
+                                <use xlink:href="assets/images/sprite/symbol/sprite.svg#electronics"></use>
+                            </svg>
+                            <div class="header-text">Saved</div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <svg class="nav-item-image icon icon-chat">
+                                <use xlink:href="assets/images/sprite/symbol/sprite.svg#chat"></use>
+                            </svg>
+                            <div class="header-text">Chat</div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <svg class="nav-item-image icon icon-man-user">
+                                <use xlink:href="assets/images/sprite/symbol/sprite.svg#man-user"></use>
+                            </svg>
+                            <div class="header-text">Profile</div>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <div class="header-right-icon have-notification">
+                    <svg class="header-icon icon icon-alarm">
+                        <use xlink:href="assets/images/sprite/symbol/sprite.svg#alarm"></use>
+                    </svg>
+                </div>
+                <label class="search icon header-right-icon">
+                    <input class="search-input input" type="text">
+                    <svg class="loupe header-icon icon icon-search">
+                        <use xlink:href="assets/images/sprite/symbol/sprite.svg#search"></use>
+                    </svg>
+                </label>
+            </div>
+        </header>
+
+        <main class="profile-settings-main">
+            <aside class="profile-card">
+                <div class="profile-photo">
+                    <img src="assets/images/content/face.jpg" alt="profile photo" class="avatar">
+                    <div class="checked">
+                        <svg class="check-mark icon icon-tick">
+                            <use xlink:href="assets/images/sprite/symbol/sprite.svg#tick"></use>
+                        </svg>
+                    </div>
+                </div>
+                <h2 class="person-name">Joji</h2>
+                <h3 class="occupation">MUSICIAN / YOUTUBER</h3>
+                <button class="button button-primary edit-profile-button">Edit</button>
+                <div class="traveling-block">
+                    <div class="profile-point">
+                        <svg class="profile-card-icon icon icon-placeholder">
+                            <use xlink:href="assets/images/sprite/symbol/sprite.svg#placeholder"></use>
+                        </svg>
+                        <span class="profile-card-point-text">Map</span>
+                    </div>
+                    <div class="profile-point">
+                        <svg class="profile-card-icon icon icon-time-and-date">
+                            <use xlink:href="assets/images/sprite/symbol/sprite.svg#time-and-date"></use>
+                        </svg>
+                        <span class="profile-card-point-text">Bookings</span>
+                    </div>
+                </div>
+                <div class="settings-block">
+                    <div class="profile-point">
+                        <svg class="profile-card-icon icon icon-customer-support">
+                            <use xlink:href="assets/images/sprite/symbol/sprite.svg#customer-support"></use>
+                        </svg>
+                        <span class="profile-card-point-text">Settings</span>
+                    </div>
+                    <div class="profile-point">
+                        <svg class="profile-card-icon icon icon-turn-off">
+                            <use xlink:href="assets/images/sprite/symbol/sprite.svg#turn-off"></use>
+                        </svg>
+                        <span class="profile-card-point-text">Logout</span>
+                    </div>
+                </div>
+            </aside>
+            <section class="settings">
+                <div class="settings-header">
+                    <div class="settings-title">
+                        <h2 class="settings-type">General Settings</h2>
+                        <h3 class="settings-description">MANAGE & CONTROL</h3>
+                    </div>
+                    <div class="settings-header-options">
+                        <button class="button settings-header-button">
+                            <svg class="settings-header-icon icon icon-previous">
+                                <use xlink:href="assets/images/sprite/symbol/sprite.svg#previous"></use>
+                            </svg>
+                        </button>
+                        <button class="button settings-header-button">
+                            <svg class="settings-header-icon icon icon-more-2">
+                                <use xlink:href="assets/images/sprite/symbol/sprite.svg#more-2"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="settings-options">
+                    <div class="settings-theme settings-item">
+                        <label for="theme" class="setting">Interface theme &#9662;</label>
+                        <select id="theme" class="input select" name="theme">
+                            <option selected value="light">LIGHT</option>
+                        </select>
+                    </div>
+                    <div class="settings-search settings-item">
+                        <div>
+                            <p for="search" class="setting">Explore search</p>
+                            <p class="settings-value">ENABLED</p>
+                        </div>
+                        <label class="switch-checkbox-wrapper">
+                            <input type="checkbox" id="search" name="search" class="switch" checked/>
+                            <span class="switch-slider"></span>
+                        </label>
+                    </div>
+                    <div class="settings-mode settings-item">
+                        <div>
+                            <p for="night-mode" class="setting">Night mode</p>
+                            <p class="settings-value">DISABLED</p>
+                        </div>
+                        <label class="switch-checkbox-wrapper">
+                            <input type="checkbox" id="night-mode" name="night-mode" class="switch"/>
+                            <span class="switch-slider"></span>
+                        </label>
+                    </div>
+                    <div class="settings-fonts settings-item">
+                        <label for="font" class="setting">Main fonts &#9662;</label>
+                        <select id="font" class="input select" name="font">
+                            <option selected value="modern">MODERN</option>
+                        </select>
+                    </div>
+                    <div class="settings-notifications settings-item">
+                        <div>
+                            <p for="notifications" class="setting">Push notifications</p>
+                            <p class="settings-value">DISABLED</p>
+                        </div>
+                        <label class="checkbox-wrapper">
+                            <input type="checkbox" id="notifications" name="push-notifications" class="checkbox"/>
+                            <span class="checkbox-checked"></span>
+                        </label>
+                    </div>
+                    <div class="settings-messages settings-item">
+                        <div>
+                            <p for="messages" class="setting">New message notification</p>
+                            <p class="settings-value">ENABLED</p>
+                        </div>
+                        <label class="checkbox-wrapper">
+                            <input type="checkbox" id="messages" name="new-messages" class="checkbox" checked/>
+                            <span class="checkbox-checked"></span>
+                        </label>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+</div>
+</body>
+</html>
