@@ -1,9 +1,8 @@
-# SA_Project
-
-This is the homework project made according to requirements. 
+# Booking site
 
 Used technologies:
 
+- Sass
 - Gulp
 - linters
 
@@ -20,3 +19,12 @@ Scripts:
 "npm run eslint" lints all js files of application
 
 "npm run eslint_fix" fixes all auto-fixable js problems
+
+
+View pages: 
+- [Details](https://anvolkravt.github.io/booking/dist/details.html) 
+- [Profile Settings](https://anvolkravt.github.io/booking/dist/profile_settings.html)
+- [Sign up](https://anvolkravt.github.io/booking/dist/sign_up.html)
+- [Onboarding](https://anvolkravt.github.io/booking/dist/onboarding.html)
+- [Modal window](https://anvolkravt.github.io/booking/dist/modal_window.html)
+
